@@ -1,0 +1,19 @@
+solve_user_query:
+  description: |
+    Analyze the user's query and generate an appropriate response based on the available database and contextual information.
+    ### Instructions:
+    1. **Understand the query:** Determine the intent and relevant context.
+    2. **Generate a response:** Perform the requested task, analysis, or retrieval of information. 
+    3. **Ensure relevance:** The response should be directly related to the user's query.
+    
+    **User Query:** `{query}`
+  expected_output: >-
+    A Natural Language Chatbot like Response in **STRUCTURED** Format.
+
+format_response:
+  description: |
+    Format the final response from agents while ensuring it aligns with the **User Query** and adheres to strict formatting guidelines. The goal is to generate a structured, natural-language chatbot-like response that is clear, engaging, and user-friendly.  
+
+    **User Query:** `{query}`  
+  expected_output: >-
+    A Well-Formatted Natural Language Chatbot like Response.
